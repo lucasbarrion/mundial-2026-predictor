@@ -11,7 +11,7 @@
 **Aplicación web de predicción del Mundial 2026 con inteligencia artificial.**  
 Motor Random Forest + simulaciones Monte Carlo + visualizaciones premium estilo Sofascore / Opta Analyst.
 
-[🚀 Ver App en vivo](#) · [📊 Dataset](#dataset) · [🤖 Modelo IA](#modelo-de-ia) · [⚙️ Instalación](#instalación)
+[🚀 Ver App en vivo](https://mundial-2026-predictor-8qyeoouyfkefauwagvn2x7.streamlit.app/) · [📊 Dataset](#dataset) · [🤖 Modelo IA](#modelo-de-ia) · [⚙️ Instalación](#instalación)
 
 </div>
 
@@ -187,7 +187,7 @@ python MODELO/train_model.py
 streamlit run app.py
 ```
 
-Abrí **http://localhost:8501** en tu navegador.
+Abrí **https://mundial-2026-predictor-8qyeoouyfkefauwagvn2x7.streamlit.app/** en tu navegador.
 
 ---
 
