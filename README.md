@@ -219,8 +219,7 @@ Abrí **http://localhost:8501** en tu navegador.
 
 **Lucas Barrionuevo**  
 📧 lucasbarrionuevo374@gmail.com  
-🎓 Administración de Empresas — Universidad Empresarial Siglo 21, Córdoba, Argentina  
-💼 Data Analytics — Power BI · SQL · Python · BigQuery · Streamlit · AppSheet
+
 
 ---
 
