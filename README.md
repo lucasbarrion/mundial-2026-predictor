@@ -11,11 +11,7 @@ Aplicación web de predicción del Mundial 2026 con inteligencia artificial.
 
 Motor Random Forest + simulaciones Monte Carlo + visualizaciones premium estilo Sofascore / Opta Analyst.
 
-<<<<<<< HEAD
 [🚀 Ver App en vivo](https://mundial-2026-predictor-8qyeoouyfkefauwagvn2x7.streamlit.app/) · [🤖 Modelo IA](#modelo-de-ia) · [⚙️ Instalación](#instalación)
-=======
-🚀 Ver App en vivo · 🤖 Modelo IA · ⚙️ Instalación
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 </div>
 
@@ -25,16 +21,12 @@ FIFA World Cup 2026 AI Predictor es una aplicación web interactiva que combina 
 
 El sistema analiza 48 selecciones clasificadas usando métricas reales (ranking FIFA, goles por partido, posesión, win rate, clean sheets, PPG y más) para calcular probabilidades de victoria en cada partido, simular la fase de grupos completa y proyectar el bracket eliminatorio hasta el campeón.
 
-<<<<<<< HEAD
 El sistema analiza **48 selecciones clasificadas** usando métricas reales (ranking FIFA, goles por partido, posesión, win rate, clean sheets, PPG y más) para calcular probabilidades de victoria en cada partido, simular la fase de grupos completa y proyectar el bracket eliminatorio hasta el campeón.
-=======
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 ✨ Funcionalidades
 
 SecciónDescripción⚽ Simulador Match AISimulá cualquier cruce con Monte Carlo, probabilidades en 90', xG estimado, heatmap de marcadores, corners y tarjetas proyectadas, clean sheet gauge y análisis de perfil de juego🏟️ Fase de GruposTablas estilo FIFA con estados de clasificación, diferencia de gol y probabilidades partido a partido🧠 Predicción IARanking de candidatos al título, sorpresa del torneo y barra de probabilidades comparativa entre los 12 principales🗺️ Simulador de TorneoBracket completo Round of 32 → Final con probabilidades por llave y campeón predicho📊 Análisis de EquiposPerfil avanzado por selección: radar de estilo, métricas normalizadas (Power Rating, Win Rate, PPG, goles) y comparación contra el promedio global
 
-<<<<<<< HEAD
 | Sección | Descripción |
 |---|---|
 | ⚽ **Simulador Match AI** | Simulá cualquier cruce con Monte Carlo, probabilidades en 90', xG estimado, heatmap de marcadores, corners y tarjetas proyectadas, clean sheet gauge y análisis de perfil de juego |
@@ -42,8 +34,6 @@ SecciónDescripción⚽ Simulador Match AISimulá cualquier cruce con Monte Carl
 | 🧠 **Predicción IA** | Ranking de candidatos al título, sorpresa del torneo y barra de probabilidades comparativa entre los 12 principales |
 | 🗺️ **Simulador de Torneo** | Bracket completo Round of 32 → Final con probabilidades por llave y campeón predicho |
 | 📊 **Análisis de Equipos** | Perfil avanzado por selección: radar de estilo, métricas normalizadas (Power Rating, Win Rate, PPG, goles) y comparación contra el promedio global |
-=======
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 🗂️ Estructura del proyecto
 
@@ -91,16 +81,12 @@ mundial-2026-predictor/
                         ▼
            localhost:8501 / URL pública
 
-<<<<<<< HEAD
 **En simple:**
 - **`app.py`** es el cerebro — conecta todo y renderiza la interfaz
 - **`DATA/equipos.csv`** aporta las estadísticas reales de cada selección
 - **`modelo_mundial.pkl`** predice probabilidades de resultado con Random Forest
 - **`bracket.py`** conoce los grupos y cruces oficiales del Mundial
 - **`components.py`** y **`charts.py`** dan el look premium visual
-=======
-En simple:
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 
 app.py es el cerebro — conecta todo y renderiza la interfaz
@@ -110,7 +96,6 @@ bracket.py conoce los grupos y cruces oficiales del Mundial
 components.py y charts.py dan el look premium visual
 
 
-<<<<<<< HEAD
 | Columna | Descripción |
 |---|---|
 | `fifa_ranking` | Ranking FIFA oficial |
@@ -130,16 +115,11 @@ components.py y charts.py dan el look premium visual
 | `group` | Grupo asignado en el Mundial 2026 |
 | `is_host` | 1 si es sede (USA, México, Canadá) |
 | `is_debut` | 1 si debuta en el Mundial 2026 |
-=======
-
-📊 Dataset — DATA/equipos.csv
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 Base de datos de las 48 selecciones clasificadas con estadísticas reales 2023–2026.
 
 ColumnaDescripciónfifa_rankingRanking FIFA oficialavg_goals_scoredGoles por partido (2023–2026)avg_goals_concededGoles recibidos por partidowin_pct / draw_pct / loss_pct% de resultados realesclean_sheet_pct% de partidos sin goles en contrappgPuntos por partidoavg_possessionPosesión promedio %avg_shots_pgDisparos por partidoavg_shots_on_target_pgDisparos al arco por partidoavg_passes_pgPases por partidogoal_diffDiferencia de goles acumuladaappearancesMundiales disputados históricamenteworld_cups_wonCopas del Mundo ganadas históricamenteconfederationConfederación (UEFA, CONMEBOL, AFC, etc.)groupGrupo asignado en el Mundial 2026is_host1 si es sede (USA, México, Canadá)is_debut1 si debuta en el Mundial 2026
 
-<<<<<<< HEAD
 **Algoritmo:** Random Forest Classifier (scikit-learn)  
 **Features:** métricas del dataset de selecciones (diferencia entre equipo local y visitante)  
 **Salida:** Probabilidades para 3 clases — Victoria (0) / Empate (1) / Derrota (2)
@@ -169,18 +149,6 @@ Las probabilidades crudas del modelo pasan por una capa de calibración que comb
 ### Simulación Monte Carlo
 
 El Simulador Match AI ejecuta hasta **100.000 simulaciones** por cruce usando `numpy.random.default_rng` con seed reproducible, permitiendo variar resultados con el botón de re-simulación sin perder consistencia entre sesiones.
-=======
-
-🤖 Modelo de IA
-
-Algoritmo: Random Forest Classifier (scikit-learn)
-
-Features: métricas del dataset de selecciones (diferencia entre equipo local y visitante)
-
-Salida: Probabilidades para 3 clases — Victoria (0) / Empate (1) / Derrota (2)
-
-Power Rating
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 Cada selección recibe un índice calculado en tiempo real como combinación de cuatro dimensiones:
 
@@ -208,13 +176,10 @@ El Simulador Match AI ejecuta hasta 100.000 simulaciones por cruce usando numpy.
 
 El sistema implementa el formato oficial del Mundial 2026:
 
-<<<<<<< HEAD
 - **12 grupos** (A–L) con 4 equipos cada uno → 72 partidos en fase de grupos
 - **Clasifican:** Top 2 de cada grupo (24) + 8 mejores terceros = **32 equipos**
 - **Eliminación directa:** Round of 32 → R16 → Cuartos → Semis → Final
 - Los terceros clasificados se asignan según criterio FIFA (puntos, diferencia de gol, goles a favor)
-=======
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 12 grupos (A–L) con 4 equipos cada uno → 72 partidos en fase de grupos
 Clasifican: Top 2 de cada grupo (24) + 8 mejores terceros = 32 equipos
@@ -243,18 +208,13 @@ python MODELO/train_model.py
 # 5. Ejecutar la app
 streamlit run app.py
 
-<<<<<<< HEAD
 O en Windows, ejecutar directamente `ABRIR_APP_MUNDIAL.bat`.
 
 Abrí **http://127.0.0.1:8501** en tu navegador.
-=======
-O en Windows, ejecutar directamente ABRIR_APP_MUNDIAL.bat.
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 Abrí http://127.0.0.1:8501 en tu navegador.
 
 
-<<<<<<< HEAD
 | Tecnología | Uso |
 |---|---|
 | Python 3.11+ | Lenguaje principal |
@@ -271,22 +231,15 @@ Abrí http://127.0.0.1:8501 en tu navegador.
 - Corners y tarjetas son **estimaciones proxy** calculadas desde variables del dataset (shots, posesión, goles concedidos, ranking). El CSV no contiene datos reales de corners, faltas o tarjetas.
 - No hay datos minuto a minuto; el perfil de juego reemplaza al momentum real.
 - Las probabilidades de título son orientativas — no contemplan lesiones, convocatorias ni contexto de fixture real.
-=======
-🛠️ Stack tecnológico
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 TecnologíaUsoPython 3.11+Lenguaje principalStreamlitFramework webScikit-learnModelo Random ForestPandas + NumPyProcesamiento de datos y simulacionesPlotlyVisualizaciones interactivas (radar, donut, gauge, heatmap, barras)CSS / HTMLDiseño premium personalizado con glassmorphism
 
 
-<<<<<<< HEAD
 - [ ] API REST con FastAPI para exponer predicciones
 - [ ] Integración con API deportiva en tiempo real (lesiones, convocatorias)
 - [ ] Exportar reportes PDF por equipo o partido
 - [ ] Guardar histórico de simulaciones entre sesiones
 - [ ] Modo apuestas con value picks y cuotas estimadas
-=======
-⚠️ Limitaciones conocidas
->>>>>>> 0d4b07d138a96c64762abdc5e46623ceb5243d7a
 
 
 Corners y tarjetas son estimaciones proxy calculadas desde variables del dataset (shots, posesión, goles concedidos, ranking). El CSV no contiene datos reales de corners, faltas o tarjetas.
