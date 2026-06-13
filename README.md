@@ -18,6 +18,10 @@ Motor Random Forest + simulaciones Monte Carlo + visualizaciones premium estilo 
 
 ---
 
+## ⚙️ Cómo funciona el ecosistema
+
+![Ecosistema FIFA 2026 AI Predictor](assets/DIAGRAMA%20MUNDIAL%20PREDICTOR.png)
+
 ## ¿Qué es este proyecto?
 
 FIFA World Cup 2026 AI Predictor es una aplicación web interactiva que combina **machine learning**, **datos reales de selecciones nacionales** y **visualizaciones de nivel profesional** para simular y predecir el torneo más grande del fútbol.
